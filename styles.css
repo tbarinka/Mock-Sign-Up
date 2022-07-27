@@ -27,6 +27,19 @@ container {
     position: relative;
 }
 
+    #image-div > p {
+        position: absolute;
+        bottom: 3px;
+        text-align: center;
+        right: 43%;
+        color: white;
+        font-size: 10px;
+    }
+
+        #image-div > p > a {
+            color: white;
+        }
+
 #background-image {
     height: 100%;
     width: auto;
