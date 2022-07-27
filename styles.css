@@ -1,15 +1,38 @@
 container {
     display: flex;
 }
-#background-image {
-    max-height: 100%;
-    width: auto;
 
-}
-.image-div {
-    width: 500px;
-    height: 800px;
-    border: solid black;
+container #image-div {
+    width: auto;
+    height: 700px;
     overflow: hidden;
     margin-right: 5px;
 }
+    #background-image {
+        max-height: 100%;
+     width: auto;
+    }
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#description {
+    height: 230px;
+    margin-bottom: 3px;
+    padding: 5px;
+ }
+
+#form-container {
+    height: 230px;
+    margin-bottom: 3px;
+    padding: 5px;
+ }
+
+#create-account {
+    height: 230px;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+
