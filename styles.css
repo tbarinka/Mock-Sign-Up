@@ -4,15 +4,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    height: 720px;
+    width: 1200px;
 }
 
 container {
     display: flex;
-    height: 720px;
-    width: 1200px;
-    /*border-radius: 15px;*/
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
     overflow: hidden;
-    /*box-shadow: 5px 5px 5px rgb(117, 113, 113);*/
+    box-shadow: 5px 5px 5px rgb(117, 113, 113);
 }
 
 #image-div {
@@ -65,8 +69,8 @@ container {
         #description p {
             position: relative;
             top: 45%;
-            margin-left: 5%;
-            margin-right: 15%;
+            margin-left: 40px;
+            margin-right: 120px;
         }
 
     #form-container {
@@ -75,15 +79,71 @@ container {
         flex-direction: column;
     }
 
-    #form-container > div {
-        height: 50%;
-    }    
-    #label-container {
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-    }
+        #form-container > div {
+            height: 50%;
+        }   
+
+        #label-container {
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+            #label-container p {
+                opacity: .7;
+            }
+            #label-container p,
+            #label-container fieldset {
+                margin-left: 40px;
+                margin-top: 10px;
+                border: none;
+            }
+
+            fieldset {
+                border: none;
+                display: flex;
+                gap: 15%;
+            }
+
+            fieldset div {
+                display: flex;
+                flex-direction: column;
+                width: 150px;
+                height: 40px;
+                margin-left: -10px;
+            }
+
+            label {
+                font-size: 10px;
+                font-weight: bold;
+            }
+            input {
+                width: 170px;
+                height: 25px;
+                border: solid rgba(0, 0, 0, .1);
+                border-radius: 5px;
+            }
+
     #create-account {
         background-color: rgba(128, 128, 128, .05);
     }
+        #create-account div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        #create-account button {
+            height: 38px;
+            width: 160px;
+            background-color: rgba(13, 82, 13, .7);
+            color: white;
+            border-radius: 10px;
+        }
+
+        #create-account > div > p {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
 /*container {
     display: flex;
     border-radius: 1rem;
