@@ -1,3 +1,15 @@
-p {
-    color: red;
+container {
+    display: flex;
+}
+#background-image {
+    max-height: 100%;
+    width: auto;
+
+}
+.image-div {
+    width: 500px;
+    height: 800px;
+    border: solid black;
+    overflow: hidden;
+    margin-right: 5px;
 }
